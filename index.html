@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Simulator</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="b">
+    <div class="text">Virtual Piano</div>
+    <div id="p">
+      <button class="wk c3 "><p>C3</p></button>
+      <button class="bk c_3"><p>C#3</p></button>
+      <button class="wk d3 "><p>D3</p></button>
+      <button class="bk d_3"><p>D#3</p></button>
+      <button class="wk e3 "><p>E3</p></button>
+      <button class="wk f3 "><p>F3</p></button>
+      <button class="bk f_3"><p>F#3</p></button>
+      <button class="wk g3 "><p>G3</p></button>
+      <button class="bk g_3"><p>G#3</p></button>
+      <button class="wk a3 "><p>A3</p></button>
+      <button class="bk a_3"><p>A#3</p></button>
+      <button class="wk b3 "><p>B3</p></button>
+      <button class="wk c4 "><p>C4</p></button>
+      <button class="bk c_4"><p>C#4</p></button>
+      <button class="wk d4 "><p>D4</p></button>
+      <button class="bk d_4"><p>D#4</p></button>
+      <button class="wk e4 "><p>E4</p></button>
+      <button class="wk f4 "><p>F4</p></button>
+      <button class="bk f_4"><p>F#4</p></button>
+      <button class="wk g4 "><p>G4</p></button>
+      <button class="bk g_4"><p>G#4</p></button>
+      <button class="wk a4 "><p>A4</p></button>
+      <button class="bk a_4"><p>A#4</p></button>
+      <button class="wk b4 "><p>B4</p></button>
+      <button class="wk c5 "><p>C5</p></button>
+    </div>
+    <div class="fff">
+      <input type="color" id="Input1">
+      <input type="button" id="id1" value="Change Background" onclick="changecolor()">
+    </div>
+        <div class="fff">
+          <input type="color" id="Input2">
+          <input type="button" id="id1" value="Change Piano Background" onclick="changeboard()">
+        </div>
+    <script>
+    function changecolor(){
+      let color=document.getElementById('Input1').value;
+      document.body.style.backgroundColor =color;
+    }
+    function changeboard(){
+      let colour=document.getElementById('Input2').value;
+      document.getElementById('p').style.backgroundColor =colour;
+    }
+    </script>
+    <script src="script/script.js"></script> 
+    <div class="f" align="center">Thank you, Visit Again</div>
+  </div>
+</body>
+</html>
